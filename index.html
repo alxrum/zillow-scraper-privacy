@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Zillow Scraper — Privacy Policy</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6.5' fill='%23e8a33b'/%3E%3Cpath d='M4.8 11.2 12 5.4l7.2 5.8' fill='none' stroke='%232b2723' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 10.3v6.4m-2.7-2.6L12 16.8l2.7-2.7' fill='none' stroke='%232b2723' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.6 19.2h10.8' fill='none' stroke='%232b2723' stroke-width='2.1' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #1b1815; --card: #24201c; --line: #3a342d; --fg: #f3ede4; --muted: #b6ab9c; --accent: #e8a33b; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 "Instrument Sans", -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  .shell { max-width: 780px; margin: 0 auto; padding: 48px 20px 64px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
+  .mark { width: 40px; height: 40px; flex: none; }
+  .brand { font-weight: 600; font-size: 18px; }
+  h1 { font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 6px; }
+  .date { color: var(--muted); margin: 0 0 28px; }
+  h2 { font-size: 21px; margin: 36px 0 10px; letter-spacing: -0.01em; }
+  p, li { color: #e4ddd2; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  .summary { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-top: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  code { background: #2c2722; padding: 1px 6px; border-radius: 5px; font-size: 14px; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 600px) { h1 { font-size: 27px; } table, thead, tbody, tr, th, td { display: block; } th { display: none; } td { border-top: 0; padding: 4px 0; } tr { border-top: 1px solid var(--line); padding: 10px 0; display: block; } }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6.5" fill="#e8a33b"/><path d="M4.8 11.2 12 5.4l7.2 5.8" fill="none" stroke="#2b2723" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 10.3v6.4m-2.7-2.6L12 16.8l2.7-2.7" fill="none" stroke="#2b2723" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.6 19.2h10.8" fill="none" stroke="#2b2723" stroke-width="2.1" stroke-linecap="round"/></svg>
+    <span class="brand">Zillow Scraper</span>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="date">Last updated: October 23, 2026</p>
+
+  <div class="summary">
+    <p><b>In short:</b> Zillow Scraper reads the listings that a Zillow search page has already loaded in your browser and saves them to a CSV file on your computer. There is no server behind this extension. Nothing you collect is sent anywhere, and we have no way to see it. We don't show ads, sell data or track what you browse.</p>
+  </div>
+
+  <h2>What stays in your browser</h2>
+  <p>The listings you collect — address, city, ZIP, state, price, price per square foot, price cut, beds, baths, living area, home type, days on Zillow, the listing link and the time each row was captured — are kept in the extension's storage in this browser, together with your settings. Up to five recent searches are kept; a sixth search replaces the one you haven't opened for the longest.</p>
+  <p>This data is not synced to other devices and is never sent to us. The CSV file is built inside your browser and saved straight to your Downloads folder.</p>
+  <p>The extension doesn't encrypt this storage. Anyone who can use your browser profile can open the extension and export what it holds.</p>
+  <p>To delete everything, remove the extension: Chrome deletes its storage with it.</p>
+
+  <h2>Network requests</h2>
+  <p>The extension has no server of its own, so there is nothing for it to send data to. It makes requests to exactly one place, <code>https://www.zillow.com/</code>, and only in one case.</p>
+  <table>
+    <tr><th>Action</th><th>What happens</th></tr>
+    <tr><td><b>Export collected</b></td><td>No requests at all. The file is built from what the pages you opened had already loaded.</td></tr>
+    <tr><td><b>Export all results</b></td><td>After you press the button, the extension asks Zillow for the remaining pages of that search — the same requests the page itself makes when you click through pagination — at about one request every 4.5 seconds. If Zillow asks for a human check, the extension stops and hands you what it has already collected. It never solves or clicks that check for you.</td></tr>
+  </table>
+  <p>No requests are made in the background, to any other site, or without you pressing a button.</p>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>No analytics, tracking or advertising inside the extension.</li>
+    <li>No accounts. We don't ask for your name or email to use Zillow Scraper.</li>
+    <li>No remote code: everything the extension runs ships inside the package.</li>
+    <li>We never sell or share your data, and we don't use it for anything other than building your file. The use of information received from Chrome APIs follows the Chrome Web Store User Data Policy, including the Limited Use requirements.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <p>Three, and no more.</p>
+  <ul>
+    <li><code>storage</code> — to keep the collected listings and your settings in this browser.</li>
+    <li><code>scripting</code> — to start working on Zillow search tabs that were already open when you installed the extension, so you don't have to reload them by hand.</li>
+    <li>Access to <code>https://www.zillow.com/*</code> — the only site the extension works on. It cannot read any other site.</li>
+  </ul>
+  <p>The extension does not request the <code>tabs</code> permission and cannot see your browsing history or the addresses of your other tabs. It does not request the <code>downloads</code> permission either: the file is handed to Chrome as an ordinary download link.</p>
+
+  <h2>Pages we open</h2>
+  <ul>
+    <li>A welcome page once, after you install the extension.</li>
+    <li>A short feedback page after you remove it. Answering is optional; answers are collected with Google Forms.</li>
+    <li>A feedback page when you press “Report this page” on an error screen, or give 1–3 stars. Pressing Report sends only the address of the page that failed and the error code — never listing data and never personal data. The page shows you both before you send anything.</li>
+    <li>The extension's own reviews page in the Chrome Web Store, if you give 4–5 stars.</li>
+  </ul>
+  <p>These three pages — welcome, uninstall and feedback — count visits with <a href="https://umami.is/">Umami</a>, a privacy-friendly analytics tool: it records the visit, the page address, the referrer, the browser and the country, without cookies and without any identifier that follows you between sites. The extension itself contains no analytics at all.</p>
+
+  <h2>Children</h2>
+  <p>Zillow Scraper is a tool for real estate work and is not directed to children under 13.</p>
+
+  <h2>Changes and contact</h2>
+  <p>If this policy changes, we'll update the date at the top. Questions or requests: <a href="https://github.com/alxrum/zillow-scraper-pages/issues">open an issue</a>.</p>
+
+  <footer>
+    Zillow is a trademark of Zillow, Inc. Zillow Scraper is an independent extension and is not affiliated with, endorsed by or sponsored by Zillow, Inc.
+    Google Forms is a trademark of Google LLC.
+  </footer>
+</div>
+</body>
+</html>
